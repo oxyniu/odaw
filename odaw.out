@@ -1,39 +1,39 @@
 
 oda.c:
 7	int main() {
-   0x5655617d <+0>:	lea    0x4(%esp),%ecx
-   0x56556181 <+4>:	and    $0xfffffff0,%esp
-   0x56556184 <+7>:	push   -0x4(%ecx)
-   0x56556187 <+10>:	push   %ebp
-   0x56556188 <+11>:	mov    %esp,%ebp
-   0x5655618a <+13>:	push   %ebx
-   0x5655618b <+14>:	push   %ecx
-   0x5655618c <+15>:	sub    $0x10,%esp
-   0x5655618f <+18>:	call   0x56556080 <__x86.get_pc_thunk.bx>
-   0x56556194 <+23>:	add    $0x2e60,%ebx
+   0x5655618d <+0>:	lea    0x4(%esp),%ecx
+   0x56556191 <+4>:	and    $0xfffffff0,%esp
+   0x56556194 <+7>:	push   -0x4(%ecx)
+   0x56556197 <+10>:	push   %ebp
+   0x56556198 <+11>:	mov    %esp,%ebp
+   0x5655619a <+13>:	push   %ebx
+   0x5655619b <+14>:	push   %ecx
+   0x5655619c <+15>:	sub    $0x10,%esp
+   0x5655619f <+18>:	call   0x56556090 <__x86.get_pc_thunk.bx>
+   0x565561a4 <+23>:	add    $0x2e50,%ebx
 
 8	    for (int i = 0; i < 10; i++) {
-=> 0x5655619a <+29>:	movl   $0x0,-0xc(%ebp)
-   0x565561a1 <+36>:	jmp    0x565561b9 <main+60>
+=> 0x565561aa <+29>:	movl   $0x0,-0xc(%ebp)
+   0x565561b1 <+36>:	jmp    0x565561c9 <main+60>
 
 9	        printf("Hello, World!");
-   0x565561a3 <+38>:	sub    $0xc,%esp
-   0x565561a6 <+41>:	lea    -0x1fec(%ebx),%eax
-   0x565561ac <+47>:	push   %eax
-   0x565561ad <+48>:	call   0x56556040 <printf@plt>
-   0x565561b2 <+53>:	add    $0x10,%esp
+   0x565561b3 <+38>:	sub    $0xc,%esp
+   0x565561b6 <+41>:	lea    -0x1fec(%ebx),%eax
+   0x565561bc <+47>:	push   %eax
+   0x565561bd <+48>:	call   0x56556040 <printf@plt>
+   0x565561c2 <+53>:	add    $0x10,%esp
 
 8	    for (int i = 0; i < 10; i++) {
-   0x565561b5 <+56>:	addl   $0x1,-0xc(%ebp)
-   0x565561b9 <+60>:	cmpl   $0x9,-0xc(%ebp)
-   0x565561bd <+64>:	jle    0x565561a3 <main+38>
-   0x565561bf <+66>:	mov    $0x0,%eax
+   0x565561c5 <+56>:	addl   $0x1,-0xc(%ebp)
+   0x565561c9 <+60>:	cmpl   $0x9,-0xc(%ebp)
+   0x565561cd <+64>:	jle    0x565561b3 <main+38>
+   0x565561cf <+66>:	mov    $0x0,%eax
 
 10	    }
 11	}
-   0x565561c4 <+71>:	lea    -0x8(%ebp),%esp
-   0x565561c7 <+74>:	pop    %ecx
-   0x565561c8 <+75>:	pop    %ebx
-   0x565561c9 <+76>:	pop    %ebp
-   0x565561ca <+77>:	lea    -0x4(%ecx),%esp
-   0x565561cd <+80>:	ret
+   0x565561d4 <+71>:	lea    -0x8(%ebp),%esp
+   0x565561d7 <+74>:	pop    %ecx
+   0x565561d8 <+75>:	pop    %ebx
+   0x565561d9 <+76>:	pop    %ebp
+   0x565561da <+77>:	lea    -0x4(%ecx),%esp
+   0x565561dd <+80>:	ret
